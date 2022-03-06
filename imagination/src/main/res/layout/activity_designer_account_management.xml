@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Designer.DesignerAccountManagementActivity">
+
+
+
+    //引入布局
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <LinearLayout
+        android:id="@+id/delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="110dp"
+        android:padding="50dp"
+        >
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            style="@style/RoundButton.Auto"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/delete_account_btn2"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="注销账号"
+            android:textSize="30dp"
+            android:onClick="delete_account_check2"
+            app:rb_isRadiusAdjustBounds="true"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+            app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/log_out"
+        android:layout_below="@+id/delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="50dp"
+        android:orientation="vertical" >
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            style="@style/RoundButton.Auto"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/log_out_btn"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="退出登录"
+            android:textSize="30dp"
+            android:onClick="log_out_check"
+            app:rb_isRadiusAdjustBounds="true"
+            android:textColor="@color/xui_default_round_btn_white_text"
+            app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+            app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

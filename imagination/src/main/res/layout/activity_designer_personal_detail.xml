@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Designer.DesignerPersonalDetailActivity">
+
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="90dp"
+            android:orientation="horizontal">
+            <!--            android:gravity="center"-->
+
+
+            <TextView
+                android:id="@+id/TextView_sex"
+                style="@style/TextStyle.Content"
+                android:layout_marginStart="20dp"
+                android:textColor="#757d8a"
+                android:textSize="20dp"
+                android:text="性别" />
+
+
+            <Spinner
+                android:id="@+id/Spinner_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/ms_item_height_size"
+                android:layout_marginStart="40dp"
+
+                android:entries="@array/sex_entry"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/LinearLayout_sex"
+            android:layout_marginTop="45dp"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/TextStyle.Content"
+                android:textColor="#757d8a"
+                android:layout_marginStart="20dp"
+                android:textSize="20dp"
+                android:text="年龄" />
+
+            <EditText
+                android:id="@+id/Ed_age"
+                style="@style/EditText.Normal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="40dp"
+                android:hint="请输入年龄"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/LinearLayout_age"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <com.xuexiang.xui.widget.picker.RulerView
+                android:id="@+id/TextView_weight"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+
+                app:rv_firstScale="50"
+                app:rv_minScale="0"
+                app:rv_maxScale="100"
+                app:rv_scaleCount="10"
+                app:rv_unit="kg"
+
+                app:rv_bgColor="#fcfffc"
+                app:rv_smallScaleColor="#aaaaaa"
+                app:rv_midScaleColor="#999999"
+                app:rv_largeScaleColor="@color/colorPrimaryDark"
+                app:rv_resultNumColor="@color/colorPrimaryDark"
+                app:rv_scaleNumColor="#666666"
+                app:rv_unitColor="@color/colorPrimaryDark"
+                app:rv_unitTextSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/LinearLayout_height"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <com.xuexiang.xui.widget.picker.RulerView
+                android:id="@+id/Ed_high"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+
+                app:rv_firstScale="175"
+                app:rv_minScale="50"
+                app:rv_maxScale="230"
+                app:rv_scaleCount="5"
+                app:rv_unit="cm"
+
+                app:rv_bgColor="#fcfffc"
+                app:rv_smallScaleColor="#aaaaaa"
+                app:rv_midScaleColor="#999999"
+                app:rv_largeScaleColor="@color/colorAccent"
+                app:rv_resultNumColor="@color/colorAccent"
+                app:rv_scaleNumColor="#666666"
+                app:rv_unitColor="@color/colorAccent"
+                app:rv_unitTextSize="10sp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/determine"
+            android:layout_below="@+id/LinearLayout_weight"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textSize="25dp"
+            android:text="确定" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <!--    <include layout="@layout/navigation_bar1"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/Login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@mipmap/logoimage"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regist_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login_name"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/Add_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="输入您的用户名"
+            android:textSize="18dp"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regist_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regist_username"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/Add_Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="输入您的手机号"
+            android:textSize="18dp"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regist_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regist_phone"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/Add_Password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="输入您的密码"
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regist_passwordagain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regist_password"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/Add_Password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="再次输入您的密码"
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/shenfen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regist_passwordagain"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/rb_consumer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人"
+                android:textSize="17dp"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_designer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="形象/服装设计师"/>
+            <RadioButton
+                android:id="@+id/rb_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="服装公司"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        -->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/shenfen"-->
+<!--        android:textSize="23dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/shape"-->
+<!--        android:text="注册"-->
+<!--        android:onClick="AddUserOnclick"/>-->
+
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        style="@style/RoundButton.Auto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shenfen"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_register"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="注册"
+        android:textSize="23dp"
+        android:onClick="AddUserOnclick"
+        app:rb_isRadiusAdjustBounds="true"
+        android:textColor="@color/xui_default_round_btn_white_text"
+        app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+        app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+    <LinearLayout
+        android:id="@+id/bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_register"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="我已认真阅读" />
+
+
+        <TextView
+            android:id="@+id/Privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="《隐私政策》" />
+
+        <TextView
+            android:id="@+id/User_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:text="《用户协议》" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

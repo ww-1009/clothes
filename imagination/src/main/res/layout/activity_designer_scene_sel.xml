@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Designer.DesignerSceneSelActivity">
+
+
+
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/scene_selection_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/scene_selection_season"
+                android:layout_width="230dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ImageDesignerSearch_RelativeLayout"
+            android:layout_below="@id/scene_selection_spinner"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/Line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Line1_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_shishang"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/shishang">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="时尚">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line1_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_tongqing"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/tongqing">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="通勤">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line1_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_xiuxian"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/xiuxian">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="休闲">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Line2"
+                android:layout_below="@+id/Line1"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Line2_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_bangong"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/bangong">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="办公">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line2_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_jujia"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/jujia">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="居家">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line2_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_run"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/run">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="运动">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Line3"
+                android:layout_below="@+id/Line2"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/Line3_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_yuehui"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/yuehui">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="约会">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line3_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_lvyou"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/lvyou">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="旅行">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Line3_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image_wuhui"
+                        android:layout_width="113dp"
+                        android:layout_height="113dp"
+                        android:padding="4dp"
+                        android:src="@drawable/wuhui">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:text="聚会">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/scene_selection_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageDesignerSearch_RelativeLayout"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                style="@style/RoundButton.Auto"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/scene_selection_check"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="形象打造"
+                android:textSize="23dp"
+                app:rb_isRadiusAdjustBounds="true"
+                android:textColor="@color/xui_default_round_btn_white_text"
+                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

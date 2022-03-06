@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="cn.itcast.handheldclass.Designer.DesignerClothesChangeActivity">
+
+
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <RelativeLayout
+        android:layout_below="@layout/navbar"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/clothes_changing_new_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/clothes_changing_ImageView"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clothes_changing_photoslist"
+            android:layout_below="@id/clothes_changing_new_photo"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/clothes_changing_photoslist_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/cloth_gray" />
+
+            <ImageView
+                android:id="@+id/clothes_changing_photoslist_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/cloth_ex2" />
+
+            <ImageView
+                android:id="@+id/clothes_changing_photoslist_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/cloth_ex3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clothes_changing_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clothes_changing_photoslist"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                style="@style/RoundButton.Auto"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/save"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="资料存档"
+                android:textSize="23dp"
+                app:rb_isRadiusAdjustBounds="true"
+                android:textColor="@color/xui_default_round_btn_white_text"
+                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ChangePwdActivity">
+
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/change_old_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/ed_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="输入您的原密码"
+            android:textAlignment="viewStart"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/change_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_old_pwd"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/ed_new_pwd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="输入您的新密码"
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+<!--    <LinearLayout-->
+<!--        -->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/change_new_password"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center">-->
+
+
+<!--        <EditText-->
+<!--            -->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/editview"-->
+<!--            android:hint="请再次输入您的密码"-->
+<!--            android:gravity="center"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:textSize="23dp"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/change_new_password_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_new_password"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/ed_new_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="再次输入您的密码"
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        style="@style/RoundButton.Auto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_new_password_again"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/change_sure"
+        android:gravity="center"
+        android:onClick="change_sure"
+        android:text="确定"
+        android:textSize="23dp"
+        app:rb_isRadiusAdjustBounds="true"
+        android:textColor="@color/xui_default_round_btn_white_text"
+        app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+        app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+
+</RelativeLayout>

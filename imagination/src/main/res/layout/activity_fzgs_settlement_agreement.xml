@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Detail_text.FzgsSettlementAgreementActivity">
+
+
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+
+    <RelativeLayout
+
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="服装公司入驻合作协议书"
+                    android:gravity="center_horizontal">
+                </TextView>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="协议由上海雅搭科技有限公司(下称“甲方”)与同意并遵照本协议规定入驻“形象打造师“app的法律实体(下称”乙方“)共同缔结。为了更好地为商家服务以及保障消费者权益，甲乙双方本着甲、乙双方本着平等合作、互惠互利的原则，在符合相关法律法规不违反市场竞争的情况下甲方须遵循乙方的运营管理规范，经友好协商，甲乙双方签署以下入驻协议。"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="一、合作内容"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1、乙方入驻甲方“形象打造师”app平台，供乙方发布其品牌服装信息。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2、本协议自乙方产品信息在甲方平台上线之日起生效。风险提示：应明确约定合作方式，尤其涉及到资金、技术、劳务等不同投入方式的。同时，应明确各自的权益份额，否则很容易在项目实际经营过程中就责任承担、盈亏分担等产生纠纷。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="二、甲方权利与义务">
+                </TextView>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1、甲方为乙方提供“形象打造师”app平台的网络宣传以及乙方旗下服装的销售渠道。">
+                </TextView>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2、甲方为乙方在消费群体中做相关宣传介绍并进行相关推广，以提升乙方的知名度。"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3、如乙方提供产品出现任何安全事故，甲方有权随时告知解除本合同，并操作乙方产品下线乙方因安全事故所带来的损失，甲方不负任何责任。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4、乙方一旦注册成功，成为本站的合法用户，将得到一个密码和用户名。您可随时根据指示改变您的密码。乙方将对用户名和密码安全负全部责任。另外，每个用户都要对以其用户名进行的所有活动和事件负全责。乙方若发现任何非法使用用户账户或存在安全漏洞的情况，请立即通告甲方。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5、甲方不对用户所发布信息的删除或储存失败负责。甲方有判定用户的行为是否符合甲方服务条款的要求和精神的保留权利，如果用户违背了服务条款的规定，甲方有中断对其提供网络服务的权利。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6、如因不可抗力或其他无法控制的原因使甲方销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，甲方不承担责任。但是甲方会尽可能合理地协助处理善后事宜，并努力使客户免受经济损失。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="三、乙方权利与义务"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1、乙方应保证需提供有盖章的单位资质证明复印件，包括工商登记证明、税务登记证明、卫生许可证及相关资质，因乙方资质问题而使本协议无法正常履行的结果由乙方负责。" >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2、乙方应遵循相关条例并保证自身具备提供本合同项下产品及履行本合同项下乙方经营资质批文。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3、凡甲方已经在乙方上线的产品及相应服务内容，在双方规定的上线时间内，未经乙方同意甲方不得进行任何形式直接或间接的取消或变更，如因特殊原因甲方确实需要进行变更或取消的，由甲方至少提前5个工作日告知乙方，并由双方另行商议对页面做相应的调整后方可进行变更。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4、乙方有义务提供合作期间在甲方“形象打造师”app平台营销活动和品牌形象展示所需要的所有文字图片和视频等资料以供甲方创作，乙方保证对其提供的该等资料具有完全权利，并有权授权给甲方基于本协议目的进行使用。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5、如甲方用户要产品发票，由乙方负责提供。"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6、甲方系统通知乙方下单后，如乙方因产品售罄原因，不能提供的，乙方应立即电话通知，下单的消费者和甲方，并做好合理的安抚和处理。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7、甲方用户退订情形，甲方应在收到退订申请后告知乙方取消对应产品订单。乙方应根据甲方通知做相应调整。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="四、合作约定"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1、双方的品牌归各自所有。甲、乙双方均不可在对方未经授权的情况下使用对方名称以及涉及相关内容的销售、促销宣传材料及广告报纸、杂志、宣传单等。如因此产生的不良后果及损失由违约方自行全部承担。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2、任何双方违反本协议所规定的义务导致另一方受到包括但不限于投诉举报、诉讼或处罚、赔偿等损失，违约方在收到守约方要求纠正其违法行为的书面通知之日，应立即停止其违约行为，并在7日内赔偿守约方因此受到的损失。风险提示：应约定保密及竞业禁止义务，特别是针对项目所涉及的技术、客户资源，以免出现合作一方在项目外以此牟利或从事其他损害项目权益的活动。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3、本协议任何一方均应对其获得对方的业务、经营、财务状况和其他保密资料予以严格保密，不得以任何形式向任何第三方披露。如因任何一方未能履行保密义务而给其他方造成任何损失的，应承担赔偿责任。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4、甲方可提供促销、引流推广等增值服务。乙方如需定制，需支付相应费用，具体须签订补充协议。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5、解决本协议项下争议由双方友好协商解决，无法达成一致情形任何一方有权将整体提交至一方所在地有管辖权的人民法院诉讼解决。">
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="五、协议生效及其他"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1、本协议由双方签字或盖章后生效。"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2、本协议正式一式2份，甲乙双方各执1份。"
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="甲方签字（盖章）：_______年____月____日 "
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="乙方签字（盖章）：_______年____月____日 "
+                    >
+                </TextView>
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    >
+                </TextView>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

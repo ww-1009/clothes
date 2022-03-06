@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#2b64cb</color>
+    <color name="colorPrimaryDark">#2b64cb</color>
+    <color name="colorAccent">#2b64cb</color>
+    <color name="PeachPuff" tools:ignore="MissingDefaultResource">#FFDAB9</color>
+    <color name="QQbar">#9ab8f4</color>
+    <color name="wangyibar">#1E68CB</color>
+    <color name="white">#ffffff</color>
+    <color name="linecolor">#c3c3c3c3</color>  //分割线
+    <color name="gray">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="background">#eff3f6</color>
+
+    <!-- RulerView -->
+    <color name="default_ruler_view_bg_color">#FFFCFFFC</color>
+    <color name="default_ruler_view_small_scale_color">#FF999999</color>
+    <color name="default_ruler_view_mid_scale_color">#FF666666</color>
+    <color name="default_ruler_view_large_scale_color">#FF50B586</color>
+    <color name="default_ruler_view_scale_num_color">#FF333333</color>
+    <color name="default_ruler_view_result_num_color">#FF50B586</color>
+    <color name="default_ruler_view_unit_color">#FF50B586</color>
+
+    <!-- blou-->
+    <color name="yellow_btn_color_disable">#CCCCCC</color>
+    <color name="yellow_btn_color_pressed">#fb8602</color>
+    <color name="yelow_btn_color_normal">#efc807</color>
+<!--    <color name="yellow_btn_color_pressed">#1565C0</color>-->
+<!--    <color name="yelow_btn_color_normal">#2196F3</color>-->
+</resources>

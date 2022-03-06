@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.itcast.handheldclass">
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyData"
+        android:allowBackup="true"
+        android:icon="@mipmap/logoimage"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/logoimage"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Consumer.ConsumerDesignerXxOwn2Activity"></activity>
+        <activity android:name=".Consumer.ConsumerChooseDer2Activity" />
+        <activity android:name=".Detail_text.FzgsSettlementAgreementActivity" />
+        <activity android:name=".Detail_text.SettlementAgreementActivity" />
+        <activity android:name=".Consumer.ConsumerClothesSaveActivity" />
+        <activity android:name=".Company.CompanyClothesChangeActivity" />
+        <activity android:name=".Company.CompanySceneSelActivity" />
+        <activity android:name=".Company.CompanyPersonalDetailActivity" />
+        <activity android:name=".Designer.DesignerClothesChangeActivity" />
+        <activity android:name=".Designer.DesignerSceneSelActivity" />
+        <activity android:name=".Designer.DesignerManagementOwnInformationActivity" />
+        <activity android:name=".Designer.DesignerAccountManagementActivity" />
+        <activity android:name=".Designer.DesignerCusAppointmentActivity" />
+        <activity android:name=".Designer.DesignerOwnPageActivity" />
+        <activity android:name=".Company.CompanyAccountManagementActivity" />
+        <activity android:name=".Company.CompanyProductDisplayActivity" />
+        <activity android:name=".Company.CompanyManagementOwnInformationActivity" />
+        <activity android:name=".Company.CompanyOwnPageActivity" />
+        <activity android:name=".Consumer.ConsumerAccountManagementActivity" />
+        <activity android:name=".Consumer.ConsumerManagementOwnInformationActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="cn.itcast.handheldclass.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".Consumer.ConsumerClothesChangeActivity" />
+        <activity android:name=".Company.CompanyMainActivity" />
+        <activity android:name=".Designer.DesignerMainActivity" />
+        <activity android:name=".ChangePwdActivity" />
+        <activity android:name=".Consumer.ConsumerSceneSelActivity" />
+        <activity android:name=".Consumer.ConsumerDesignerOwn4Activity" />
+        <activity android:name=".Consumer.ConsumerPersonalDetailActivity" />
+        <activity android:name=".Consumer.ConsumerOwnPageActivity" />
+        <activity android:name=".Consumer.ConsumerChooseDerActivity" />
+        <activity android:name=".ForgetPwdActivity" />
+        <activity android:name=".Detail_text.UserAgreementActivity" />
+        <activity android:name=".Detail_text.PrivacyPolicyActivity" />
+        <activity android:name=".Consumer.ConsumerMainActivity" />
+        <activity android:name=".tools.Albums" />
+        <activity android:name=".tools.Camera" />
+        <activity android:name=".tools.Opencv" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".Designer.DesignerPersonalDetailActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--屏幕自适应设计图-->
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+    </application>
+
+</manifest>

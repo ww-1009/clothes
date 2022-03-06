@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ForgetPwdActivity">
+
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/forget_password_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/Login_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="输入您的用户名"
+            android:textSize="18dp"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/forget_password_phone"
+        android:layout_below="@id/forget_password_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="输入您的手机号"
+            android:textSize="18dp"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/forget_password_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget_password_phone"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/new_pwd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="输入您的新密码"
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/forget_password_password_again"
+        android:layout_below="@+id/forget_password_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <com.xuexiang.xui.widget.edittext.ClearEditText
+            android:id="@+id/new_pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="再次输入您的密码"
+            android:textSize="18dp"
+            android:inputType="textPassword"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 验证码部分 -->
+    <LinearLayout
+        android:id="@+id/yzm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/forget_password_password_again"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_phoneCodes"
+            android:layout_width="180dp"
+            android:background="@drawable/editview"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:hint="请输入4位验证码" />
+
+        <ImageView
+            android:id="@+id/showCode"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="code_onClick"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rg_lay"
+        android:layout_below="@+id/yzm"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/rb_consumer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人"
+                android:textSize="17dp"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_designer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="形象/服装设计师"/>
+            <RadioButton
+                android:id="@+id/rb_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="服装公司"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        style="@style/RoundButton.Auto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_lay"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sure"
+        android:layout_centerHorizontal="true"
+        android:text="确定"
+        android:textSize="23dp"
+        android:onClick="change_sure"
+        app:rb_isRadiusAdjustBounds="true"
+        android:textColor="@color/xui_default_round_btn_white_text"
+        app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+        app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+</RelativeLayout>

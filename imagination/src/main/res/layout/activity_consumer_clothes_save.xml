@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="cn.itcast.handheldclass.Consumer.ConsumerClothesSaveActivity">
+
+
+    //引入布局
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+
+    <RelativeLayout
+
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/C1"
+                    android:clickable="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/c1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:id="@+id/look_1"
+                                android:text="试衣"
+                                android:textSize="20dp"
+                                app:rb_isRadiusAdjustBounds="true"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                android:id="@+id/buy_1"
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:text="购买"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                android:textSize="23dp"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_isRadiusAdjustBounds="true" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="23dp"
+                                android:text="价格：109">
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--商品分割线-->
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-  -  -  -  -  -  -  -  ">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/C2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/c2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/look_2"
+                                android:text="试衣"
+                                android:textSize="23dp"
+                                app:rb_isRadiusAdjustBounds="true"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                android:id="@+id/buy_2"
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:text="购买"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                android:textSize="23dp"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_isRadiusAdjustBounds="true" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="23dp"
+                                android:text="价格：89">
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--商品分割线-->
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-  -  -  -  -  -  -  -  ">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/C3"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/c3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/look_3"
+                                android:text="试衣"
+                                android:textSize="23dp"
+                                app:rb_isRadiusAdjustBounds="true"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                android:id="@+id/buy_3"
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:text="购买"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                android:textSize="23dp"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_isRadiusAdjustBounds="true" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="23dp"
+                                android:text="价格：49.9">
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <!--商品分割线-->
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-  -  -  -  -  -  -  -  ">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/C4"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/c4" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/look_4"
+                                android:text="试衣"
+                                android:textSize="23dp"
+                                app:rb_isRadiusAdjustBounds="true"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                android:id="@+id/buy_4"
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:text="购买"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                android:textSize="23dp"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_isRadiusAdjustBounds="true" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="23dp"
+                                android:text="价格：89">
+                            </TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--商品分割线-->
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-  -  -  -  -  -  -  -  ">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/C5"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+
+                            android:layout_width="190dp"
+                            android:layout_height="200dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/c5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/look_5"
+                                android:text="试衣"
+                                android:textSize="23dp"
+                                app:rb_isRadiusAdjustBounds="true"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+                                android:id="@+id/buy_5"
+                                style="@style/RoundButton.Auto"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="17dp"
+                                android:layout_height="wrap_content"
+                                android:text="购买"
+                                android:textColor="@color/xui_default_round_btn_white_text"
+                                android:textSize="23dp"
+                                app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_borderColor="@color/xui_round_btn_yellow_bg"
+                                app:rb_isRadiusAdjustBounds="true" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textSize="23dp"
+                                android:text="价格：43.8">
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--商品分割线-->
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-  -  -  -  -  -  -  -  ">
+                    </TextView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

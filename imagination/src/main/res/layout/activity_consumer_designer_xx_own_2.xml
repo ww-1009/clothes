@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Consumer.ConsumerDesignerXxOwn2Activity">
+
+
+    //引入布局
+    <include layout = "@layout/navbar"
+        tools:ignore="ResourceCycle" />
+    <LinearLayout
+        android:id="@+id/image_designer_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/image_designer_ImageView"
+            android:layout_width="226dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/designer7"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_designer_name"
+        android:layout_below="@+id/image_designer_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/image_designer_name_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="***" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_designer_introduce"
+        android:layout_below="@+id/image_designer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/image_designer_introduce_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="8年从业经验，打造您的个人形象" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_designer_number"
+        android:layout_below="@+id/image_designer_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/image_designer_number_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="联系电话：" />
+        <TextView
+            android:id="@+id/image_designer_number_Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="***" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image_designer_position"
+        android:layout_below="@+id/image_designer_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/image_designer_position_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="门店地址：" />
+        <TextView
+            android:id="@+id/image_designer_position_Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="***" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/image_designer_position"
+        android:id="@+id/image_designer_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            style="@style/RoundButton.Auto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_designer_appointButton"
+            android:layout_below="@+id/image_designer_position"
+            android:text="预约"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            app:rb_isRadiusAdjustBounds="true"
+            app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+            app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+        <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+            android:id="@+id/image_designer_ask_Button"
+            style="@style/RoundButton.Auto"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_designer_position"
+            android:layout_toRightOf="@+id/image_designer_appointButton"
+            android:layout_marginLeft="30dp"
+            android:text="咨询"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            app:rb_isRadiusAdjustBounds="true"
+            app:rb_backgroundColor="@color/xui_round_btn_yellow_bg"
+            app:rb_borderColor="@color/xui_round_btn_yellow_bg" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
